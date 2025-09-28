@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Asset - TrackSphere</title>
+  <link rel="stylesheet" href="flex_box_style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo"><strong>TrackSphere</strong></div>
+      <ul>
+        <li><a href="flex_box_homepage.html">Home</a></li>
+        <li><a href="flex_box_assetspage.html">Assets</a></li>
+        <li><a href="flex_dashboard.html">Dashboard</a></li>
+        <li><a href="flex_contact.html">Contact</a></li>
+        <li><a href="flex_login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Add New Asset</h1>
+    <p>Fill out the form below to register a new cybersecurity asset</p>
+  </section>
+
+  <!-- Asset Form -->
+  <section class="asset-form-container assets-card">
+    <form class="asset-form">
+      <label for="asset-name">Asset Name:</label>
+      <input type="text" id="asset-name" name="asset-name" placeholder="Enter asset name" required>
+
+      <label for="asset-category">Category:</label>
+      <input type="text" id="asset-category" name="asset-category" placeholder="e.g. Network Security" required>
+
+      <label for="asset-desc">Description:</label>
+      <textarea id="asset-desc" name="asset-desc" rows="4" placeholder="Short description of the asset" required></textarea>
+
+      <label for="asset-tier">Security Tier:</label>
+      <select id="asset-tier" name="asset-tier" required>
+        <option value="">-- Select Tier --</option>
+        <option value="Perimeter Defense">Perimeter Defense</option>
+        <option value="Threat Detection">Threat Detection</option>
+        <option value="Security Intelligence">Security Intelligence</option>
+        <option value="Endpoint Defense">Endpoint Defense</option>
+        <option value="Access Control">Access Control</option>
+      </select>
+
+      <div class="form-buttons">
+        <button type="submit">Save Asset</button>
+        <a href="flex_box_assetspage.html"><button type="button" class="secondary">Back to Assets</button></a>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: info@tracksphere.com</p>
+        <p>Phone: +92-300-1234567</p>
+        <p>Address: Karachi, Pakistan</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="flex_box_homepage.html">Home</a></li>
+          <li><a href="flex_box_assetspage.html">Assets</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="flex_contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>About TrackSphere</h3>
+        <p>TrackSphere provides modern asset tracking and management solutions designed to simplify and secure your business operations.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TrackSphere. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

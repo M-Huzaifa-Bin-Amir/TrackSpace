@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - TrackSphere</title>
+  <link rel="stylesheet" href="flex_box_style.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">TrackSphere</div>
+      <button class="register-btn">Add Asset</button>
+      <nav>
+        <ul>
+          <li><a href="flex_dashboard.html">Overview</a></li>
+          <li><a href="flex_box_assetspage.html">Assets</a></li>
+          <li><a href="flex_box_addassets.html">Add Asset</a></li>
+          <li><a href="flex_box_homepage.html">Home</a></li>
+          <li><a href="flex_contact.html">Contact</a></li>
+          <li><a href="flex_login.html">Login</a></li>
+        </ul>
+      </nav>
+      <div class="promo">
+        <img src="placeholder_light_gray_block.png" alt="App" />
+        <p>Get mobile app</p>
+      </div>
+    </aside>
+
+    <!-- Main Area -->
+    <main class="main-area">
+      <!-- Topbar -->
+      <div class="topbar">
+        <div class="search-input">
+          <input type="search" placeholder="Search assets..." />
+        </div>
+        <div class="user-info">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80" alt="User" />
+          <span>Emma Kwan</span>
+        </div>
+      </div>
+
+      <!-- Cards Row -->
+      <section class="dashboard-cards">
+        <div class="dashboard-card">
+          <div class="icon">📦</div>
+          <h3>3,256</h3>
+          <p>Total Assets</p>
+        </div>
+        <div class="dashboard-card">
+          <div class="icon">👥</div>
+          <h3>394</h3>
+          <p>Active Users</p>
+        </div>
+        <div class="dashboard-card">
+          <div class="icon">💰</div>
+          <h3>$2,536</h3>
+          <p>Avg Cost</p>
+        </div>
+        <div class="dashboard-card">
+          <div class="icon">🔒</div>
+          <h3>38</h3>
+          <p>Security Alerts</p>
+        </div>
+      </section>
+
+      <!-- Charts and Details -->
+      <section class="dashboard-content">
+        <div class="chart-card">
+          <h3>Asset Categories Trend</h3>
+          <div class="chart-placeholder">Bar Chart</div>
+        </div>
+        <div class="chart-card">
+          <h3>Security Tier Distribution</h3>
+          <div class="chart-placeholder">Donut Chart</div>
+        </div>
+        <div class="small-card">
+          <h3>Assets Added This Month</h3>
+          <div class="chart-placeholder">Line Chart</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
