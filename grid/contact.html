@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - TrackSphere</title>
-  <!-- Use the existing flexbox stylesheet for consistent styling -->
-  <link rel="stylesheet" href="flex_box_style.css">
+  <title>Contact Us - TrackSphere (Grid)</title>
+  <!-- Use the grid stylesheet for pure CSS Grid layouts -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -14,25 +14,26 @@
     <nav>
       <div class="logo"><strong>TrackSphere</strong></div>
       <ul>
-        <li><a href="flex_box_homepage.html">Home</a></li>
-        <li><a href="flex_box_assetspage.html">Assets</a></li>
-        <li><a href="flex_dashboard.html">Dashboard</a></li>
-        <li><a href="flex_contact.html">Contact</a></li>
-        <li><a href="flex_login.html">Login</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="assets.html">Assets</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero section for the contact page -->
-  <section class="contact-hero">
+  <section class="contact-hero-grid">
     <h1>Contact Us</h1>
     <p>Get in touch with our team for any questions or support</p>
   </section>
 
   <!-- Contact information and form -->
-  <section class="contact-container">
+  <section class="contact-container-grid">
     <!-- Contact details -->
-    <div class="contact-info">
+    <div class="contact-info-grid">
       <h2>Reach Us</h2>
       <p>
         Email: <a href="mailto:info@tracksphere.com">info@tracksphere.com</a><br>
@@ -44,19 +45,21 @@
       </p>
     </div>
     <!-- Contact form -->
-    <div class="contact-form">
+    <div class="contact-form-grid">
       <h2>Send Us a Message</h2>
-      <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input id="name" type="text" name="name" placeholder="Your Name" required>
+      <form action="#" method="post" class="form-container">
+        <label for="name-grid">Name:</label>
+        <input id="name-grid" type="text" name="name" placeholder="Your Name" required>
 
-        <label for="email">Email:</label>
-        <input id="email" type="email" name="email" placeholder="Your Email" required>
+        <label for="email-grid">Email:</label>
+        <input id="email-grid" type="email" name="email" placeholder="Your Email" required>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <label for="message-grid">Message:</label>
+        <textarea id="message-grid" name="message" rows="5" placeholder="Your Message" required></textarea>
 
-        <button type="submit">Send Message</button>
+        <div class="form-buttons">
+          <button type="submit">Send Message</button>
+        </div>
       </form>
     </div>
   </section>
@@ -73,10 +76,11 @@
       <div class="footer-section">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="flex_box_homepage.html">Home</a></li>
-          <li><a href="flex_box_assetspage.html">Assets</a></li>
-          <li><a href="flex_contact.html">Contact</a></li>
-          <li><a href="flex_login.html">Login</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="assets.html">Assets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
         </ul>
       </div>
       <div class="footer-section">
