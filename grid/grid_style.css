@@ -431,31 +431,29 @@ footer {
 }
 
 /* Dashboard (grid version) */
-.dashboard-container-grid {
+.dashboard-container {
   display: grid;
   grid-template-columns: 230px 1fr;
   min-height: 100vh;
   background: #f5f5fa;
 }
 
-.sidebar-grid {
+.sidebar {
   background-color: #340158;
   color: white;
-  /* match the width of the column defined on the container to prevent overflow */
   width: 230px;
   display: grid;
-  /* four rows: logo, register button, navigation (fills remaining space), and promo card */
   grid-template-rows: auto auto 1fr auto;
   padding: 20px 15px;
 }
 
-.sidebar-grid .logo {
+.sidebar .logo {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-.sidebar-grid .register-btn-grid {
+.sidebar .register-btn {
   background-color: #7e3ff2;
   color: white;
   padding: 10px;
@@ -469,30 +467,11 @@ footer {
   transition: background-color 0.3s ease;
 }
 
-.sidebar-grid .register-btn-grid:hover {
+.sidebar .register-btn:hover {
   background-color: #9a63ff;
 }
 
-/* Link styled as a button for the grid sidebar */
-.sidebar-grid .register-link-grid {
-  display: block;
-  text-align: center;
-  background-color: #7e3ff2;
-  color: white;
-  padding: 10px;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.sidebar-grid .register-link-grid:hover {
-  background-color: #9a63ff;
-}
-
-
-.sidebar-grid nav ul {
+.sidebar nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -500,7 +479,7 @@ footer {
   gap: 15px;
 }
 
-.sidebar-grid nav ul li a {
+.sidebar nav ul li a {
   color: white;
   text-decoration: none;
   display: grid;
@@ -512,11 +491,11 @@ footer {
   transition: background-color 0.3s ease;
 }
 
-.sidebar-grid nav ul li a:hover {
+.sidebar nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.sidebar-grid .promo {
+.sidebar .promo {
   background: #7e3ff2;
   color: white;
   padding: 20px;
@@ -525,32 +504,32 @@ footer {
   margin-top: 30px;
 }
 
-.sidebar-grid .promo img {
+.sidebar .promo img {
   width: 80px;
   height: 80px;
   margin-bottom: 10px;
 }
 
-.main-area-grid {
+.main-area {
   display: grid;
   grid-template-rows: auto auto 1fr;
   gap: 20px;
   padding: 20px;
 }
 
-.topbar-grid {
+.topbar {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
   gap: 20px;
 }
 
-.search-input-grid {
+.search-input {
   width: 100%;
   position: relative;
 }
 
-.search-input-grid input {
+.search-input input {
   width: 100%;
   padding: 10px 12px;
   border: 1px solid #ccc;
@@ -558,27 +537,27 @@ footer {
   font-size: 1em;
 }
 
-.user-info-grid {
+.user-info {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
   gap: 10px;
 }
 
-.user-info-grid img {
+.user-info img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.dashboard-cards-grid {
+.dashboard-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
 }
 
-.dashboard-card-grid {
+.dashboard-card {
   background: white;
   border-radius: 10px;
   padding: 20px;
@@ -586,19 +565,19 @@ footer {
   position: relative;
 }
 
-.dashboard-card-grid h3 {
+.dashboard-card h3 {
   margin: 0;
   font-size: 1.8rem;
   color: #340158;
 }
 
-.dashboard-card-grid p {
+.dashboard-card p {
   margin: 5px 0 0;
   color: #555;
   font-size: 0.9rem;
 }
 
-.dashboard-card-grid .icon {
+.dashboard-card .icon {
   position: absolute;
   top: -15px;
   right: 15px;
@@ -612,28 +591,21 @@ footer {
   color: #4B0082;
 }
 
-.dashboard-content-grid {
+.dashboard-content {
   display: grid;
-  /* responsive columns: cards will wrap based on available width */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
-.chart-card-grid {
+.chart-card,
+.small-card {
   background: white;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.small-card-grid {
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.chart-placeholder-grid {
+.chart-placeholder {
   background: linear-gradient(135deg, #e6e6fa, #d8bfd8);
   height: 150px;
   border-radius: 8px;
