@@ -8,6 +8,10 @@
   consistent with the flex version.
 */
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -710,9 +714,12 @@ footer {
 /* Dashboard (grid version) */
 .dashboard-container-grid {
   display: grid;
-  grid-template-columns: 230px 1fr;
+  grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
+  column-gap: 32px;
   min-height: 100vh;
+  padding: 20px;
   background: #f5f5fa;
+  align-items: start;
 }
 
 .sidebar-grid {
@@ -724,6 +731,9 @@ footer {
   /* four rows: logo, register button, navigation (fills remaining space), and promo card */
   grid-template-rows: auto auto 1fr auto;
   padding: 20px 15px;
+  border-radius: 16px;
+  align-self: start;
+  overflow: hidden;
 }
 
 .sidebar-grid .logo {
@@ -739,6 +749,7 @@ footer {
   border-radius: 6px;
   margin-bottom: 20px;
   width: 100%;
+  box-sizing: border-box;
   display: block;
   cursor: pointer;
   font-weight: bold;
@@ -801,6 +812,7 @@ footer {
   border-radius: 8px;
   text-align: center;
   margin-top: 30px;
+  width: 100%;
 }
 
 .sidebar-grid .promo img {
@@ -814,6 +826,12 @@ footer {
   grid-template-rows: auto auto 1fr;
   gap: 20px;
   padding: 20px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 12px 32px rgba(52, 1, 88, 0.08);
+  max-width: 980px;
+  width: 100%;
+  justify-self: center;
 }
 
 .topbar-grid {
