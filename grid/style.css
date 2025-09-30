@@ -921,3 +921,69 @@ footer {
   color: #4B0082;
   font-weight: bold;
 }
+
+/* ──────────────────────────────────────────────────────────
+   1.  Desktop first  →  Tablet  (≤ 992 px)
+   ──────────────────────────────────────────────────────────*/
+@media (max-width: 992px) {
+
+  /* FLEX-version  ─────────────────────────────────────────*/
+  /* collapse the lateral sidebar above its content */
+  .sidebar        { position: relative; width: 100%; height: auto; }
+  /* let the main area fill the full width */
+  .main           { margin-left: 0; }
+
+  /* turn the top-nav into two lines */
+  header nav      { flex-wrap: wrap; gap: .5rem; }
+
+  /* GRID-version  ─────────────────────────────────────────*/
+  /* stack columns: header, main, sidebar */
+  .dashboard-grid { grid-template-columns: 1fr;
+                    grid-template-areas:
+                      "header"
+                      "main"
+                      "sidebar"; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   2.  Tablet  →  Large phones  (≤ 768 px)
+   ──────────────────────────────────────────────────────────*/
+@media (max-width: 768px) {
+
+  /* universal tweaks */
+  h1              { font-size: 1.6rem; }
+  .btn            { padding: .6rem 1.2rem; font-size: .9rem; }
+
+  /* FLEX */
+  /* stack nav items vertically */
+  header nav      { flex-direction: column; align-items: flex-start; }
+
+  /* show cards in a single column */
+  .card-grid      { display: flex; flex-direction: column; gap: 1rem; }
+
+  /* GRID */
+  /* one-column flow, auto rows */
+  .dashboard-grid { grid-template-columns: 1fr; grid-auto-rows: auto; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   3.  Small phones  (≤ 480 px)
+   ──────────────────────────────────────────────────────────*/
+@media (max-width: 480px) {
+
+  /* typography shrink */
+  body            { font-size: 14px; }
+  h1              { font-size: 1.3rem; }
+  h2              { font-size: 1.1rem; }
+
+  /* tighten paddings */
+  .card, .panel   { padding: 1rem; }
+
+  /* make big tables scroll instead of overflowing */
+  .table-wrapper  { overflow-x: auto; }
+
+  /* optional: collapse sidebar into a hamburger */
+  .sidebar        { display: none; }
+  .hamburger      { display: block; }        /* show the menu button */
+}
+
