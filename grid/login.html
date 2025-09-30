@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - TrackSphere (Grid)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo"><strong>TrackSphere</strong></div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="assets.html">Assets</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Login Section (Grid) -->
+  <section class="login-wrapper-grid">
+    <!--
+      Two-column grid: a marketing panel and the actual login form.
+      The layout collapses into a single column on smaller screens.
+    -->
+    <div class="login-layout-grid">
+      <div class="login-info-grid">
+        <h2>Welcome Back</h2>
+        <p>
+          Access real-time asset intelligence, assign tasks, and keep your team
+          aligned from one secure dashboard.
+        </p>
+        <ul>
+          <li>Monitor asset health with live alerts</li>
+          <li>Collaborate using role-based workspaces</li>
+          <li>Export compliance-ready audit trails</li>
+        </ul>
+      </div>
+      <div class="login-card-grid">
+        <h2>Sign in to TrackSphere</h2>
+        <form>
+          <label for="username">Email or Username</label>
+          <input type="text" id="username" name="username" placeholder="e.g. emma@tracksphere.com" required>
+
+          <label for="password">Password</label>
+          <div class="password-field-grid">
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <a href="#" class="forgot-link-grid">Forgot?</a>
+          </div>
+
+          <label for="workspace">Workspace</label>
+          <select id="workspace" name="workspace">
+            <option>Operations HQ</option>
+            <option>Field Services</option>
+            <option>Compliance Team</option>
+          </select>
+
+          <button type="submit">Login</button>
+        </form>
+        <p class="signup-hint-grid">Need an account? <a href="add-asset.html">Request access</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: info@tracksphere.com</p>
+        <p>Phone: +92-300-1234567</p>
+        <p>Address: Karachi, Pakistan</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="assets.html">Assets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>About TrackSphere</h3>
+        <p>TrackSphere provides modern asset tracking and management solutions designed to simplify and secure your business operations.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TrackSphere. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

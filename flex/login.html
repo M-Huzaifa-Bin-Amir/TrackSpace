@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - TrackSphere</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo"><strong>TrackSphere</strong></div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="assets.html">Assets</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Login Section -->
+  <section class="login-wrapper">
+    <!--
+      Flex-based split layout matching the richer grid design.
+      A quick pitch sits beside the authentication form to improve storytelling.
+    -->
+    <div class="login-layout">
+      <div class="login-info">
+        <h2>Welcome back to TrackSphere</h2>
+        <p>
+          Keep every critical asset within reach. TrackSphere unifies live telemetry,
+          maintenance schedules, and compliance workflows into one secure view.
+        </p>
+        <ul>
+          <li>Streamlined approvals with audit trails</li>
+          <li>Granular permissions for hybrid teams</li>
+          <li>Insights surfaced with AI-powered alerts</li>
+        </ul>
+      </div>
+      <div class="login-card">
+        <h2>Sign in</h2>
+        <form>
+          <label for="username">Email or Username</label>
+          <input type="text" id="username" name="username" placeholder="e.g. alex@tracksphere.com" required>
+
+          <label for="password">Password</label>
+          <div class="password-field">
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <a href="#" class="forgot-link">Forgot?</a>
+          </div>
+
+          <label for="remember" class="remember-row">
+            <input type="checkbox" id="remember" name="remember" checked>
+            Remember this device
+          </label>
+
+          <button type="submit">Login</button>
+        </form>
+        <p class="signup-hint">First time here? <a href="add-asset.html">Request an invite</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: info@tracksphere.com</p>
+        <p>Phone: +92-300-1234567</p>
+        <p>Address: Karachi, Pakistan</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="assets.html">Assets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>About TrackSphere</h3>
+        <p>TrackSphere provides modern asset tracking and management solutions designed to simplify and secure your business operations.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TrackSphere. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

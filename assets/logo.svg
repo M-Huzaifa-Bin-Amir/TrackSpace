@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" aria-labelledby="title">
+  <title>The Seb's TrackSpace logo</title>
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5b34d3" />
+      <stop offset="100%" stop-color="#0d1b3d" />
+    </linearGradient>
+  </defs>
+  <path d="M60 5l45 18v45c0 30-20 57-45 67-25-10-45-37-45-67V23z" fill="url(#shieldGradient)" />
+  <text x="50%" y="55%" text-anchor="middle" fill="#ffffff" font-family="'Poppins', sans-serif" font-size="46" font-weight="600">TS</text>
+</svg>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - TrackSphere (Grid)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--
+    Grid-based recreation of the flex dashboard layout.
+    The parent container uses two columns: a fixed sidebar and a fluid main area.
+  -->
+  <div class="dashboard-container-grid">
+    <!-- Sidebar -->
+    <aside class="sidebar-grid">
+      <div>
+        <div class="logo">TrackSphere</div>
+        <a class="register-btn-grid" href="add-asset.html">Add Asset</a>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="dashboard.html" aria-current="page">Overview</a></li>
+            <li><a href="assets.html">Assets</a></li>
+            <li><a href="add-asset.html">Add Asset</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="promo">
+        <img src="../assets/placeholder_light_gray_block.png" alt="Download the mobile app" />
+        <p>Get mobile app</p>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-area-grid">
+      <!-- Topbar -->
+      <div class="topbar-grid">
+        <div class="search-input-grid">
+          <input type="search" placeholder="Search assets..." aria-label="Search assets" />
+        </div>
+        <div class="user-info-grid">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80" alt="User profile" />
+          <span>Emma Kwan</span>
+        </div>
+      </div>
+
+      <!-- Cards Row -->
+      <section class="dashboard-cards-grid" aria-label="Key performance indicators">
+        <div class="dashboard-card-grid">
+          <div class="icon">📦</div>
+          <h3>3,256</h3>
+          <p>Total Assets</p>
+        </div>
+        <div class="dashboard-card-grid">
+          <div class="icon">👥</div>
+          <h3>394</h3>
+          <p>Active Users</p>
+        </div>
+        <div class="dashboard-card-grid">
+          <div class="icon">💰</div>
+          <h3>$2,536</h3>
+          <p>Avg Cost</p>
+        </div>
+        <div class="dashboard-card-grid">
+          <div class="icon">🔒</div>
+          <h3>38</h3>
+          <p>Security Alerts</p>
+        </div>
+      </section>
+
+      <!-- Charts and Details -->
+      <section class="dashboard-content-grid" aria-label="Charts and analysis">
+        <div class="chart-card-grid">
+          <h3>Asset Categories Trend</h3>
+          <div class="chart-placeholder-grid">Bar Chart</div>
+        </div>
+        <div class="chart-card-grid">
+          <h3>Security Tier Distribution</h3>
+          <div class="chart-placeholder-grid">Donut Chart</div>
+        </div>
+        <div class="small-card-grid">
+          <h3>Assets Added This Month</h3>
+          <div class="chart-placeholder-grid">Line Chart</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
