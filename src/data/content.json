@@ -1,0 +1,18 @@
+{
+"siteTitle": "TrackSphere",
+"hero": {
+"title": "Welcome to TrackSphere",
+"subtitle": "Simple, Secure Asset Management.",
+"cta": "Dashboard"
+},
+"initialAssets": [
+{ "name": "Firewall-Main-HQ", "category": "Network", "description": "Main firewall for office", "securityTier": "Perimeter Defense" },
+{ "name": "DB-Server-01", "category": "Database", "description": "Customer records", "securityTier": "Critical Infrastructure" },
+{ "name": "Laptop-22", "category": "Endpoint", "description": "Developer laptop", "securityTier": "Endpoint Defense" }
+],
+"cards": [
+{ "title": "Secure", "desc": "Enterprise-grade encryption for all your data." },
+{ "title": "Fast", "desc": "Real-time updates across your entire network." },
+{ "title": "Simple", "desc": "Designed for humans, not just machines." }
+]
+}
