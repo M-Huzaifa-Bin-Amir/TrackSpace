@@ -8,12 +8,12 @@ import { getFirestore } from "firebase/firestore"; // <--- This was likely missi
 // 2. Your web app's Firebase configuration
 // (GO TO FIREBASE CONSOLE -> PROJECT SETTINGS TO GET THESE KEYS AGAIN IF YOU LOST THEM)
 const firebaseConfig = {
-  apiKey: "AIzaSyDvqvQpE9WxzTCxcJNmNmtwWQXK6lzyYes",
-  authDomain: "tracksphere-a1099.firebaseapp.com",
-  projectId: "tracksphere-a1099",
-  storageBucket: "tracksphere-a1099.firebasestorage.app",
-  messagingSenderId: "996298261432",
-  appId: "1:996298261432:web:5c8aa546ddcf4cb04bc54d"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 // 3. Initialize Firebase

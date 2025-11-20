@@ -7,7 +7,6 @@ const AskAI = () => {
   ]);
   const [isLoading, setIsLoading] = useState(false);
 
-  // 🔴 TODO: Paste your API Key here
   const API_KEY = "AIzaSyCmTbsgiY68xL_2wAI77AkEErvBW20skoc"; 
 
   const handleSend = async (e) => {
